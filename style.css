@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #0f0f0f; /* matte black */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center content */
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main title */
+.title {
+    font-size: clamp(2.2rem, 6vw, 3.8rem);
+    letter-spacing: 0.4em;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #cfcfcf;
+    margin-bottom: 40px;
+}
+
+/* Coming soon with subtle blink */
+.coming {
+    font-size: 0.85rem;
+    letter-spacing: 0.3em;
+    color: #9a9a9a;
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: #6f6f6f;
+    text-align: center;
+}
+
+

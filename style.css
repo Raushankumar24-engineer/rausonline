@@ -39,10 +39,6 @@ body {
     text-decoration: none;
 }
 
-.brand:hover {
-    opacity: 0.7;
-}
-
 /* ===== Theme Toggle ===== */
 #themeToggle {
     position: absolute;
@@ -54,15 +50,9 @@ body {
     padding: 6px 12px;
     border-radius: 20px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
-#themeToggle:hover {
-    background: #fff;
-    color: #000;
-}
-
-/* ===== Perfect Centering ===== */
+/* ===== Container ===== */
 .container {
     display: flex;
     align-items: center;
@@ -128,7 +118,7 @@ body {
 /* ===== Footer ===== */
 .footer-info {
     position: absolute;
-    bottom: 10px; /* pushed slightly down */
+    bottom: 10px;
     width: 92%;
     max-width: 1100px;
 
@@ -144,7 +134,6 @@ body {
     text-align: center;
 }
 
-/* ===== Social Icons Inline ===== */
 .socials {
     display: flex;
     gap: 14px;
@@ -155,12 +144,6 @@ body {
 .socials a {
     color: inherit;
     font-size: 1rem;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.socials a:hover {
-    opacity: 0.6;
-    transform: translateY(-2px);
 }
 
 /* ===== Light Theme ===== */
@@ -178,21 +161,18 @@ body.light .footer-info {
     color: #666;
 }
 
-body.light #themeToggle {
-    border-color: #999;
-    color: #000;
-}
-
-body.light #themeToggle:hover {
-    background: #000;
-    color: #fff;
-}
-
-/* ===== Responsive ===== */
+/* ================= MOBILE FIX ================= */
 @media (max-width: 768px) {
+
+    body {
+        justify-content: flex-start;
+        padding-bottom: 140px; /* space for footer */
+    }
+
     .container {
         flex-direction: column;
         text-align: center;
+        margin-top: 80px;
     }
 
     .actions {
@@ -200,10 +180,14 @@ body.light #themeToggle:hover {
     }
 
     .footer-info {
+        position: static;   /* 🔑 KEY FIX */
+        margin-top: 40px;
         flex-direction: column;
         gap: 12px;
     }
 }
+
+
 
 
 

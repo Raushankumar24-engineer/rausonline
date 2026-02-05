@@ -40,13 +40,13 @@ body {
 }
 
 /* ===== Theme Toggle ===== */
-#themeToggle {
+#theme-toggle {
     position: absolute;
     top: 20px;
     right: 24px;
     background: transparent;
     border: 1px solid #444;
-    color: #fff;
+    color: inherit;
     padding: 6px 12px;
     border-radius: 20px;
     cursor: pointer;
@@ -144,6 +144,7 @@ body {
 .socials a {
     color: inherit;
     font-size: 1rem;
+    text-decoration: none;
 }
 
 /* ===== Light Theme ===== */
@@ -166,7 +167,7 @@ body.light .footer-info {
 
     body {
         justify-content: flex-start;
-        padding-bottom: 140px; /* space for footer */
+        padding-bottom: 140px;
     }
 
     .container {
@@ -180,7 +181,7 @@ body.light .footer-info {
     }
 
     .footer-info {
-        position: static;   /* 🔑 KEY FIX */
+        position: static;
         margin-top: 40px;
         flex-direction: column;
         gap: 12px;

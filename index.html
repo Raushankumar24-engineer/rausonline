@@ -26,7 +26,7 @@
     <a href="/" class="brand">rausonline</a>
 
     <!-- Theme Toggle -->
-    <button id="themeToggle" aria-label="Toggle theme">☀</button>
+    <button id="theme-toggle" aria-label="Toggle theme">🌤️</button>
 
     <!-- Main Section -->
     <main class="container">
@@ -44,9 +44,10 @@
             </p>
 
             <div class="actions">
-                <a href="#" class="btn resume">Resume</a>
-                <a href="#" class="btn projects">Projects</a>
-                <a href="#" class="btn contact">Contact</a>
+                <!-- Put your resume file as resume.pdf in same folder -->
+                <a href="resume.pdf" class="btn resume" target="_blank">Resume</a>
+                <a href="projects.html" class="btn projects">Projects</a>
+                <a href="mailto:raushankumarofficial94@gmail.com" class="btn contact">Contact</a>
             </div>
         </div>
     </main>
@@ -75,18 +76,12 @@
         </div>
     </footer>
 
-    <script>
-        const toggleBtn = document.getElementById("themeToggle");
-        const body = document.body;
-
-        toggleBtn.addEventListener("click", () => {
-            body.classList.toggle("light");
-            toggleBtn.textContent = body.classList.contains("light") ? "🌙" : "☀";
-        });
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
+
+
+
 
 
 
